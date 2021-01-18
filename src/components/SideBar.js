@@ -1,32 +1,33 @@
 import React from "react";
 import StyledItem from "./styled_components/StyledItem";
 import { connect } from "react-redux";
+import { setMode } from "../actions/setMode";
 const SideBar = (props) => (
   <div id="side-bar">
     <StyledItem
       onClick={() => {
-        props.dispatch({ type: "SET", mode: "dashboard" });
+        props.dispatch(setMode("dashboard"));
       }}
     >
       Dashboard
     </StyledItem>
     <StyledItem
       onClick={() => {
-        props.dispatch({ type: "SET", mode: "catalog" });
+        props.dispatch(setMode("catalog"));
       }}
     >
       Catalog
     </StyledItem>
     <StyledItem
       onClick={() => {
-        props.dispatch({ type: "SET", mode: "sales" });
+        props.dispatch(setMode("sales"));
       }}
     >
       Sales
     </StyledItem>
     <StyledItem
       onClick={() => {
-        props.dispatch({ type: "SET", mode: "reports" });
+        props.dispatch(setMode("reports"));
       }}
     >
       Reports
