@@ -1,12 +1,21 @@
 #home-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-//   background: url("../img/cryptobitcoin.jpg");
-//   background-repeat: no-repeat;
-//   background-size: 100% 100%;
 }
 
 .jumbo-text {
   font-size: 100px;
+}
+.sub-text {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+img {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
 }
