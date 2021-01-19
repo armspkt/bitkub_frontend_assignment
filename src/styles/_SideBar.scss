@@ -1,8 +1,35 @@
 #side-bar {
-  background-color: #60ca66;
+  background-color: #028090;
   height: 100%;
   width: 10%;
-  min-width: 100px;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.side-bar-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-bar-header p,
+.icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.icon-menu {
+  color: #fff;
+  font-size: 1.4rem;
 }

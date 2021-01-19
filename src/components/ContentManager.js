@@ -5,14 +5,13 @@ import Catalog from "./Content_Catalog";
 import Sales from "./Content_Sales";
 import Reports from "./Content_Reports";
 import Extensions from "./Content_Extensions";
-
+import SearchBar from "./SearchBar";
 const ContentManager = (props) => (
   <div id="content-wrapper">
-    <div className="card">
-      <div className="container">
+    <SearchBar />
+      <div>
         <h1 className="heading">Content Manager</h1>
       </div>
-    </div>
     {props.content == "dashboard" && <Dashboard />}
     {props.content == "catalog" && <Catalog />}
     {props.content == "sales" && <Sales />}
