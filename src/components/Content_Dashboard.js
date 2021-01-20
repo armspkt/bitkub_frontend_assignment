@@ -1,7 +1,8 @@
 import React from "react";
+import Chart from "./Chart";
 
 export default () => (
-  <div id="content" className="jumbo-text text-center text-slim">
-    <p>Dashboard</p>
+  <div id="content">
+    <Chart />
   </div>
 );

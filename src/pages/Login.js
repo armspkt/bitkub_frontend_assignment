@@ -1,7 +1,7 @@
 import React from "react";
-
+import LoginBox from "../components/LoginBox";
 export default () => (
-  <div>
-    <h1>Login Page</h1>
-  </div>
+  <section id="login-page">
+    <LoginBox />
+  </section>
 );
